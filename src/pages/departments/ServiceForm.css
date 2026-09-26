@@ -1,0 +1,541 @@
+/* =========================================================
+   SERVICE FORM PAGE
+   ========================================================= */
+
+.service-form-page {
+    min-height: 100vh;
+    padding: 32px;
+    background: #f6f8fc;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.service-form-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    margin-bottom: 28px;
+}
+
+.service-back-button {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dce4ee;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #475569;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.service-back-button:hover {
+    color: #0d6efd;
+    border-color: #b8d4ff;
+    background: #edf5ff;
+}
+
+.service-eyebrow {
+    margin-bottom: 4px;
+
+    color: #0d6efd;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.service-form-header h1 {
+    margin: 0;
+
+    color: #14213d;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.service-form-header p {
+    margin: 6px 0 0;
+
+    color: #7b8798;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM CARD
+   ========================================================= */
+
+.service-form-card {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #dce4ee;
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.05);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.service-card-header {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 20px 24px;
+
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.service-card-icon {
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #edf5ff;
+    color: #0d6efd;
+}
+
+.service-card-header h2 {
+    margin: 0 0 4px;
+
+    color: #25324b;
+
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.service-card-header p {
+    margin: 0;
+
+    color: #8a96a6;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   FORM BODY
+   ========================================================= */
+
+.service-form-body {
+    padding: 28px 30px;
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.service-alert {
+    margin-bottom: 22px;
+
+    padding: 12px 14px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+}
+
+.service-alert-error {
+    background: #fff5f5;
+
+    border: 1px solid #ffd5d5;
+
+    color: #dc3545;
+}
+
+.service-alert-success {
+    background: #f0fdf4;
+
+    border: 1px solid #bbf7d0;
+
+    color: #15803d;
+}
+
+
+/* =========================================================
+   FIELD
+   ========================================================= */
+
+.service-field {
+    margin-bottom: 22px;
+}
+
+.service-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.service-field label span {
+    margin-left: 3px;
+
+    color: #dc3545;
+}
+
+.service-field small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.service-input-wrapper {
+    min-height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 0 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #d7e0eb;
+
+    border-radius: 8px;
+
+    transition: all 0.2s ease;
+}
+
+.service-input-wrapper:focus-within {
+    border-color: #86b7fe;
+
+    box-shadow:
+        0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.service-input-wrapper svg {
+    flex-shrink: 0;
+
+    color: #94a3b8;
+}
+
+.service-input-wrapper input {
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 10px 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #25324b;
+
+    font-size: 13px;
+}
+
+.service-input-wrapper input::placeholder {
+    color: #a0aaba;
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+.service-textarea-wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    padding: 11px 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #d7e0eb;
+
+    border-radius: 8px;
+
+    transition: all 0.2s ease;
+}
+
+.service-textarea-wrapper:focus-within {
+    border-color: #86b7fe;
+
+    box-shadow:
+        0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.service-textarea-wrapper svg {
+    flex-shrink: 0;
+
+    margin-top: 3px;
+
+    color: #94a3b8;
+}
+
+.service-textarea-wrapper textarea {
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 0;
+
+    resize: vertical;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #25324b;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+.service-textarea-wrapper textarea::placeholder {
+    color: #a0aaba;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.service-form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding: 16px 24px;
+
+    background: #fafbfd;
+
+    border-top: 1px solid #e5eaf0;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.service-secondary-button,
+.service-primary-button {
+    min-height: 41px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 17px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.service-secondary-button {
+    background: #ffffff;
+
+    border: 1px solid #d7e0eb;
+
+    color: #475569;
+}
+
+.service-secondary-button:hover {
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+}
+
+.service-primary-button {
+    background: #0d6efd;
+
+    border: 1px solid #0d6efd;
+
+    color: #ffffff;
+}
+
+.service-primary-button:hover {
+    background: #0b5ed7;
+
+    border-color: #0b5ed7;
+}
+
+.service-primary-button:disabled,
+.service-secondary-button:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.service-loading {
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.service-loading p {
+    margin: 0;
+
+    color: #7b8798;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .service-form-page {
+        padding: 20px 15px;
+    }
+
+    .service-form-header {
+        gap: 10px;
+    }
+
+    .service-form-header h1 {
+        font-size: 24px;
+    }
+
+    .service-form-header p {
+        font-size: 13px;
+    }
+
+    .service-form-card {
+        border-radius: 10px;
+    }
+
+    .service-card-header {
+        padding: 18px;
+    }
+
+    .service-form-body {
+        padding: 22px 18px;
+    }
+
+    .service-form-footer {
+        padding: 15px 18px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .service-form-page {
+        padding: 16px 12px;
+    }
+
+    .service-form-header h1 {
+        font-size: 22px;
+    }
+
+    .service-form-header p {
+        font-size: 12px;
+    }
+
+    .service-card-header {
+        padding: 16px;
+    }
+
+    .service-card-icon {
+        width: 39px;
+        height: 39px;
+    }
+
+    .service-card-header h2 {
+        font-size: 16px;
+    }
+
+    .service-form-body {
+        padding: 20px 16px;
+    }
+
+    .service-form-footer {
+        flex-direction: column-reverse;
+
+        align-items: stretch;
+    }
+
+    .service-secondary-button,
+    .service-primary-button {
+        width: 100%;
+    }
+
+}

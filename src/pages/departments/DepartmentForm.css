@@ -1,0 +1,1371 @@
+/* =========================================================
+   DEPARTMENT FORM PAGES
+   ========================================================= */
+
+.department-form-page {
+    min-height: 100vh;
+    background: #f6f8fc;
+    padding: 28px 32px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.department-form-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.back-button {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dce4ee;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #475569;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    color: #0d6efd;
+    border-color: #b8d4ff;
+    background: #edf5ff;
+}
+
+.form-eyebrow {
+    margin-bottom: 3px;
+
+    color: #0d6efd;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.department-form-header h1 {
+    margin: 0;
+
+    color: #14213d;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.department-form-header p {
+    margin: 6px 0 0;
+
+    color: #7b8798;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.department-form-card {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.form-card-header {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 19px 24px;
+
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.form-card-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #edf5ff;
+    color: #0d6efd;
+}
+
+.form-card-header h2 {
+    margin: 0 0 3px;
+
+    color: #25324b;
+
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.form-card-header p {
+    margin: 0;
+
+    color: #8a96a6;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+.form-card-body {
+    padding: 28px 30px;
+}
+
+
+/* =========================================================
+   FORM FIELD
+   ========================================================= */
+
+.form-field {
+    margin-bottom: 24px;
+}
+
+.form-field:last-child {
+    margin-bottom: 0;
+}
+
+.form-field label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-field label span {
+    margin-left: 3px;
+
+    color: #dc3545;
+}
+
+.form-field small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.form-input-wrapper {
+    min-height: 44px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0 13px;
+
+    background: #ffffff;
+
+    border: 1px solid #d7e0eb;
+    border-radius: 8px;
+
+    transition: all 0.2s ease;
+}
+
+.form-input-wrapper:focus-within {
+    border-color: #86b7fe;
+
+    box-shadow:
+        0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+.form-input-wrapper svg {
+    flex-shrink: 0;
+
+    color: #94a3b8;
+}
+
+.form-input-wrapper input {
+    width: 100%;
+
+    padding: 10px 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #25324b;
+
+    font-size: 13px;
+}
+
+.form-input-wrapper input::placeholder {
+    color: #a0aaba;
+}
+
+
+/* =========================================================
+   ROLES
+   ========================================================= */
+
+.role-input-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.role-input-row .form-input-wrapper {
+    flex: 1;
+}
+
+.add-role-button {
+    min-height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 0 16px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #eaf3ff;
+    color: #0d6efd;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.add-role-button:hover {
+    background: #dcecff;
+}
+
+.selected-roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    margin-top: 12px;
+}
+
+.selected-role {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px 9px;
+
+    border-radius: 6px;
+
+    background: #f1f5f9;
+    color: #475569;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.selected-role button {
+    width: 17px;
+    height: 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #e2e8f0;
+    color: #64748b;
+
+    cursor: pointer;
+}
+
+.selected-role button:hover {
+    background: #fee2e2;
+    color: #dc3545;
+}
+
+
+/* =========================================================
+   ALERT
+   ========================================================= */
+
+.form-alert {
+    margin-bottom: 22px;
+
+    padding: 12px 14px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+}
+
+.form-alert-error {
+    background: #fff5f5;
+    border: 1px solid #ffd5d5;
+    color: #dc3545;
+}
+
+.form-alert-success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #15803d;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.form-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+
+    padding: 16px 24px;
+
+    background: #fafbfd;
+
+    border-top: 1px solid #e5eaf0;
+}
+
+.secondary-form-button,
+.primary-form-button {
+    min-height: 41px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: 0 17px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.secondary-form-button {
+    background: #ffffff;
+
+    border: 1px solid #d7e0eb;
+
+    color: #475569;
+}
+
+.secondary-form-button:hover {
+    background: #f8fafc;
+}
+
+.primary-form-button {
+    background: #0d6efd;
+
+    border: 1px solid #0d6efd;
+
+    color: #ffffff;
+}
+
+.primary-form-button:hover {
+    background: #0b5ed7;
+}
+
+.primary-form-button:disabled,
+.secondary-form-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.department-loading {
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.department-loading p {
+    margin-top: 12px;
+
+    color: #7b8798;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .department-form-page {
+        padding: 20px 15px;
+    }
+
+    .department-form-header h1 {
+        font-size: 23px;
+    }
+
+    .form-card-body {
+        padding: 22px 18px;
+    }
+
+    .form-card-footer {
+        padding: 15px 18px;
+    }
+
+    .role-input-row {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .add-role-button {
+        width: 100%;
+    }
+
+}
+
+/* =========================================================
+   INVENTORY SECTION
+   ========================================================= */
+
+.inventory-section {
+    margin-top: 0;
+
+    padding: 22px 24px;
+
+    background: #fafbfd;
+
+    border-top: 1px solid #e5eaf0;
+}
+
+
+/* =========================================================
+   INVENTORY HEADER
+   ========================================================= */
+
+.inventory-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 16px;
+}
+
+.inventory-title {
+    display: flex;
+    align-items: center;
+
+    gap: 11px;
+}
+
+.inventory-title > svg {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    padding: 9px;
+
+    border-radius: 8px;
+
+    background: #edf5ff;
+
+    color: #0d6efd;
+}
+
+.inventory-title h3 {
+    margin: 0 0 3px;
+
+    color: #25324b;
+
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.inventory-title p {
+    margin: 0;
+
+    color: #8a96a6;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ADD INVENTORY BUTTON
+   ========================================================= */
+
+.inventory-add-button {
+    min-height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 13px;
+
+    border: 1px solid #0d6efd;
+    border-radius: 7px;
+
+    background: #0d6efd;
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.inventory-add-button:hover {
+    background: #0b5ed7;
+
+    border-color: #0b5ed7;
+}
+
+.inventory-add-button:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   INVENTORY LIST
+   ========================================================= */
+
+.inventory-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+/* =========================================================
+   INVENTORY ITEM
+   ========================================================= */
+
+.inventory-item {
+    display: grid;
+
+    grid-template-columns:
+        minmax(180px, 1.4fr)
+        minmax(70px, 0.5fr)
+        minmax(70px, 0.5fr)
+        minmax(170px, 1.2fr)
+        auto;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 13px 15px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ef;
+
+    border-radius: 9px;
+
+    transition: all 0.2s ease;
+}
+
+.inventory-item:hover {
+    border-color: #cbd8e8;
+
+    box-shadow:
+        0 2px 7px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================================
+   INVENTORY INFO
+   ========================================================= */
+
+.inventory-info {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.inventory-icon {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #f1f6ff;
+
+    color: #0d6efd;
+}
+
+.inventory-info strong {
+    display: block;
+
+    overflow: hidden;
+
+    color: #25324b;
+
+    font-size: 12px;
+    font-weight: 650;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.inventory-info small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   INVENTORY DETAIL
+   ========================================================= */
+
+.inventory-detail {
+    min-width: 0;
+}
+
+.inventory-detail > span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.inventory-detail > strong {
+    display: flex;
+    align-items: center;
+
+    gap: 2px;
+
+    overflow: hidden;
+
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 650;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   STOCK STATUS
+   ========================================================= */
+
+.stock-normal {
+    color: #15803d !important;
+}
+
+.stock-low {
+    color: #d97706 !important;
+}
+
+.stock-empty {
+    color: #dc3545 !important;
+}
+
+
+/* =========================================================
+   PATIENT
+   ========================================================= */
+
+.patient-detail {
+    min-width: 0;
+}
+
+.patient-detail > strong {
+    color: #475569;
+}
+
+.patient-detail svg {
+    flex-shrink: 0;
+
+    color: #64748b;
+}
+
+
+/* =========================================================
+   INVENTORY ACTIONS
+   ========================================================= */
+
+.inventory-actions {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 5px;
+}
+
+.inventory-action {
+    min-height: 31px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 0 8px;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+/* Stock */
+
+.inventory-action.stock {
+    background: #edf5ff;
+
+    border: 1px solid #d5e7ff;
+
+    color: #0d6efd;
+}
+
+.inventory-action.stock:hover {
+    background: #dcecff;
+
+    border-color: #b8d4ff;
+}
+
+
+/* Patient */
+
+.inventory-action.patient {
+    background: #f0fdf4;
+
+    border: 1px solid #ccefd8;
+
+    color: #15803d;
+}
+
+.inventory-action.patient:hover {
+    background: #dcfce7;
+
+    border-color: #bbf7d0;
+}
+
+
+/* Remove patient */
+
+.inventory-action.remove-patient {
+    background: #fff7ed;
+
+    border: 1px solid #fed7aa;
+
+    color: #c2410c;
+}
+
+.inventory-action.remove-patient:hover {
+    background: #ffedd5;
+
+    border-color: #fdba74;
+}
+
+
+/* Edit */
+
+.inventory-action.edit {
+    width: 31px;
+
+    padding: 0;
+
+    background: #fff8e8;
+
+    border: 1px solid #fde7b0;
+
+    color: #d97706;
+}
+
+.inventory-action.edit:hover {
+    background: #fef3c7;
+
+    border-color: #fcd34d;
+}
+
+
+/* Delete */
+
+.inventory-action.delete {
+    width: 31px;
+
+    padding: 0;
+
+    background: #fff1f2;
+
+    border: 1px solid #fecdd3;
+
+    color: #dc3545;
+}
+
+.inventory-action.delete:hover {
+    background: #ffe4e6;
+
+    border-color: #fda4af;
+}
+
+
+/* =========================================================
+   EMPTY INVENTORY
+   ========================================================= */
+
+.inventory-empty {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 16px;
+
+    background: #ffffff;
+
+    border: 1px dashed #d7e0eb;
+
+    border-radius: 8px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+.inventory-empty svg {
+    color: #a0aaba;
+}
+
+.inventory-empty button {
+    padding: 5px 9px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #edf5ff;
+    color: #0d6efd;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.inventory-empty button:hover {
+    background: #dcecff;
+}
+
+
+/* =========================================================
+   INVENTORY MODAL OVERLAY
+   ========================================================= */
+
+.inventory-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 23, 42, 0.45);
+}
+
+
+/* =========================================================
+   INVENTORY MODAL
+   ========================================================= */
+
+.inventory-modal {
+    width: 100%;
+
+    max-width: 480px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #dce4ee;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.15);
+
+    animation: inventoryModalIn 0.18s ease-out;
+}
+
+@keyframes inventoryModalIn {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(8px)
+                   scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0)
+                   scale(1);
+    }
+
+}
+
+
+/* =========================================================
+   MODAL HEADER
+   ========================================================= */
+
+.inventory-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 19px 22px;
+
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.inventory-modal-header h3 {
+    margin: 0 0 4px;
+
+    color: #25324b;
+
+    font-size: 16px;
+    font-weight: 650;
+}
+
+.inventory-modal-header p {
+    margin: 0;
+
+    color: #8a96a6;
+
+    font-size: 11px;
+}
+
+.inventory-modal-close {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #f1f5f9;
+    color: #64748b;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.inventory-modal-close:hover {
+    background: #fee2e2;
+
+    color: #dc3545;
+}
+
+.inventory-modal-close:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   INVENTORY FORM
+   ========================================================= */
+
+.inventory-modal form {
+    padding: 22px;
+}
+
+.inventory-form-group {
+    margin-bottom: 18px;
+}
+
+.inventory-form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.inventory-form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.inventory-form-group input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    min-height: 42px;
+
+    padding: 9px 12px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    border: 1px solid #d7e0eb;
+
+    border-radius: 7px;
+
+    color: #25324b;
+
+    font-size: 12px;
+
+    transition: all 0.2s ease;
+}
+
+.inventory-form-group input:focus {
+    border-color: #86b7fe;
+
+    box-shadow:
+        0 0 0 3px rgba(
+            13,
+            110,
+            253,
+            0.1
+        );
+}
+
+.inventory-form-group input::placeholder {
+    color: #a0aaba;
+}
+
+.inventory-form-group input:disabled {
+    background: #f8fafc;
+
+    cursor: not-allowed;
+}
+
+.inventory-form-group small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   MODAL ACTIONS
+   ========================================================= */
+
+.inventory-modal-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    margin-top: 22px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #e5eaf0;
+}
+
+.inventory-cancel-button,
+.inventory-save-button {
+    min-height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 14px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.inventory-cancel-button {
+    background: #ffffff;
+
+    border: 1px solid #d7e0eb;
+
+    color: #475569;
+}
+
+.inventory-cancel-button:hover {
+    background: #f8fafc;
+}
+
+.inventory-save-button {
+    background: #0d6efd;
+
+    border: 1px solid #0d6efd;
+
+    color: #ffffff;
+}
+
+.inventory-save-button:hover {
+    background: #0b5ed7;
+
+    border-color: #0b5ed7;
+}
+
+.inventory-cancel-button:disabled,
+.inventory-save-button:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   RESPONSIVE INVENTORY
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .inventory-item {
+        grid-template-columns:
+            1.5fr
+            0.6fr
+            0.6fr
+            1fr;
+
+        gap: 12px;
+    }
+
+    .inventory-actions {
+        grid-column: 1 / -1;
+
+        justify-content: flex-start;
+
+        padding-top: 9px;
+
+        border-top: 1px solid #eef2f7;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .inventory-section {
+        padding: 18px 15px;
+    }
+
+    .inventory-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .inventory-add-button {
+        width: 100%;
+    }
+
+    .inventory-item {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 13px;
+    }
+
+    .inventory-info {
+        grid-column: 1 / -1;
+
+        padding-bottom: 9px;
+
+        border-bottom: 1px solid #eef2f7;
+    }
+
+    .inventory-detail.patient-detail {
+        grid-column: 1 / -1;
+    }
+
+    .inventory-actions {
+        grid-column: 1 / -1;
+
+        flex-wrap: wrap;
+    }
+
+    .inventory-action.stock,
+    .inventory-action.patient,
+    .inventory-action.remove-patient {
+        flex: 1;
+    }
+
+    .inventory-modal-overlay {
+        align-items: flex-end;
+
+        padding: 0;
+    }
+
+    .inventory-modal {
+        max-width: none;
+
+        border-radius: 14px 14px 0 0;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .inventory-item {
+        grid-template-columns: 1fr;
+    }
+
+    .inventory-detail,
+    .inventory-detail.patient-detail {
+        grid-column: 1;
+    }
+
+    .inventory-actions {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .inventory-action.stock,
+    .inventory-action.patient,
+    .inventory-action.remove-patient {
+        flex: none;
+
+        width: 100%;
+    }
+
+    .inventory-action.edit,
+    .inventory-action.delete {
+        width: 100%;
+    }
+
+    .inventory-modal form {
+        padding: 18px;
+    }
+
+    .inventory-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .inventory-cancel-button,
+    .inventory-save-button {
+        width: 100%;
+    }
+
+}

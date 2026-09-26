@@ -1,0 +1,834 @@
+/* =========================================================
+   SERVICE DETAILS PAGE
+   ========================================================= */
+
+.service-details-page {
+    min-height: 100vh;
+    background: #f6f8fc;
+    padding: 32px 36px 50px;
+    color: #25324b;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.service-details-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.service-details-back {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1px solid #dce4ee;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #475569;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.service-details-back:hover {
+    color: #0d6efd;
+    border-color: #b8d4ff;
+    background: #edf5ff;
+}
+
+.service-details-eyebrow {
+    margin-bottom: 5px;
+
+    color: #0d6efd;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.service-details-header h1 {
+    margin: 0;
+
+    color: #14213d;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.service-details-header p {
+    margin: 7px 0 0;
+
+    color: #7b8798;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   SERVICE INFORMATION
+   ========================================================= */
+
+.service-information-card,
+.service-management-card {
+    width: 100%;
+
+    margin-bottom: 24px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+
+/* =========================================================
+   INFORMATION HEADER
+   ========================================================= */
+
+.service-information-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 21px 25px;
+
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.service-information-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #edf5ff;
+    color: #0d6efd;
+}
+
+.service-information-header > div:nth-child(2) {
+    flex: 1;
+}
+
+.service-information-header h2,
+.service-management-header h2 {
+    margin: 0 0 4px;
+
+    color: #25324b;
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.service-information-header p,
+.service-management-header p {
+    margin: 0;
+
+    color: #8a96a6;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   EDIT SERVICE BUTTON
+   ========================================================= */
+
+.service-edit-button {
+    min-height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: 0 15px;
+
+    border: 1px solid #0d6efd;
+    border-radius: 8px;
+
+    background: #0d6efd;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.service-edit-button:hover {
+    background: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+
+/* =========================================================
+   INFORMATION BODY
+   ========================================================= */
+
+.service-information-body {
+    padding: 6px 25px;
+}
+
+.service-info-row {
+    min-height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+.service-info-row:last-child {
+    border-bottom: none;
+}
+
+.service-info-row > span {
+    color: #7b8798;
+
+    font-size: 13px;
+}
+
+.service-info-row > strong {
+    max-width: 65%;
+
+    color: #25324b;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-align: right;
+}
+
+.service-fee {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+
+    color: #198754 !important;
+}
+
+
+/* =========================================================
+   MANAGEMENT HEADER
+   ========================================================= */
+
+.service-management-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 21px 25px;
+
+    border-bottom: 1px solid #e5eaf0;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.service-primary-button {
+    min-height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: 0 16px;
+
+    border: 1px solid #0d6efd;
+    border-radius: 8px;
+
+    background: #0d6efd;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.service-primary-button:hover {
+    background: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+
+/* =========================================================
+   MANAGEMENT BODY
+   ========================================================= */
+
+.service-management-body {
+    padding: 20px 25px;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.service-empty-management {
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    border: 1px dashed #d7e0eb;
+    border-radius: 9px;
+
+    background: #fafbfd;
+
+    color: #8a96a6;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   INVENTORY LIST
+   ========================================================= */
+
+.service-inventory-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-inventory-item {
+    display: grid;
+
+    grid-template-columns:
+        minmax(180px, 1.5fr)
+        100px
+        100px
+        minmax(150px, 1fr)
+        auto;
+
+    align-items: center;
+    gap: 18px;
+
+    padding: 15px 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e7ef;
+    border-radius: 9px;
+
+    transition: all 0.2s ease;
+}
+
+.service-inventory-item:hover {
+    border-color: #cbd8e8;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================================
+   INVENTORY INFO
+   ========================================================= */
+
+.service-inventory-info {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.service-inventory-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #edf5ff;
+    color: #0d6efd;
+}
+
+.service-inventory-info strong {
+    display: block;
+
+    color: #25324b;
+
+    font-size: 13px;
+}
+
+.service-inventory-info small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   INVENTORY DETAILS
+   ========================================================= */
+
+.service-inventory-detail span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+.service-inventory-detail strong {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+
+    color: #334155;
+
+    font-size: 13px;
+}
+
+.stock-normal {
+    color: #198754 !important;
+}
+
+.stock-low {
+    color: #d97706 !important;
+}
+
+.stock-empty {
+    color: #dc3545 !important;
+}
+
+
+/* =========================================================
+   INVENTORY ACTIONS
+   ========================================================= */
+
+.service-inventory-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.service-inventory-action {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dce4ee;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #64748b;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.service-inventory-action:hover {
+    background: #f1f5f9;
+    color: #0d6efd;
+    border-color: #b8d4ff;
+}
+
+.service-inventory-action.delete:hover {
+    background: #fff1f2;
+    color: #dc3545;
+    border-color: #fecdd3;
+}
+
+
+/* =========================================================
+   SERVICE USERS
+   ========================================================= */
+
+.service-users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service-user-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    padding: 13px 15px;
+
+    border: 1px solid #e1e7ef;
+    border-radius: 9px;
+
+    background: #ffffff;
+}
+
+.service-user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-user-avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef2ff;
+    color: #6366f1;
+}
+
+.service-user-info strong {
+    display: block;
+
+    color: #25324b;
+
+    font-size: 13px;
+}
+
+.service-user-info small {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.service-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 23, 42, 0.45);
+}
+
+.service-modal {
+    width: 100%;
+    max-width: 500px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 50px rgba(15, 23, 42, 0.2);
+}
+
+.service-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 22px;
+
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.service-modal-header h3 {
+    margin: 0 0 4px;
+
+    color: #25324b;
+
+    font-size: 17px;
+}
+
+.service-modal-header p {
+    margin: 0;
+
+    color: #8a96a6;
+
+    font-size: 12px;
+}
+
+.service-modal-close {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #f1f5f9;
+    color: #64748b;
+
+    cursor: pointer;
+}
+
+.service-modal-close:hover {
+    background: #fee2e2;
+    color: #dc3545;
+}
+
+
+/* =========================================================
+   MODAL FORM
+   ========================================================= */
+
+.service-modal-form {
+    padding: 22px;
+}
+
+.service-form-group {
+    margin-bottom: 18px;
+}
+
+.service-form-group:last-child {
+    margin-bottom: 0;
+}
+
+.service-form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #334155;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.service-form-group input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    min-height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d7e0eb;
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #ffffff;
+    color: #25324b;
+
+    font-size: 13px;
+}
+
+.service-form-group input:focus {
+    border-color: #86b7fe;
+
+    box-shadow:
+        0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+
+/* =========================================================
+   MODAL ACTIONS
+   ========================================================= */
+
+.service-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+
+    margin-top: 22px;
+}
+
+.service-cancel-button,
+.service-save-button {
+    min-height: 40px;
+
+    padding: 0 16px;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.service-cancel-button {
+    border: 1px solid #d7e0eb;
+
+    background: #ffffff;
+    color: #475569;
+}
+
+.service-save-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    border: 1px solid #0d6efd;
+
+    background: #0d6efd;
+    color: #ffffff;
+}
+
+.service-save-button:hover {
+    background: #0b5ed7;
+}
+
+
+/* =========================================================
+   LOADING / ERROR
+   ========================================================= */
+
+.service-details-loading {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f6f8fc;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.service-details-error {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border: 1px solid #fecaca;
+    border-radius: 9px;
+
+    background: #fff5f5;
+    color: #dc3545;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .service-details-page {
+        padding: 24px 18px 40px;
+    }
+
+    .service-inventory-item {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-inventory-actions {
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .service-details-page {
+        padding: 20px 14px 35px;
+    }
+
+    .service-details-header h1 {
+        font-size: 24px;
+    }
+
+    .service-information-header,
+    .service-management-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .service-edit-button,
+    .service-primary-button {
+        width: 100%;
+    }
+
+    .service-info-row {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 5px;
+
+        padding: 13px 0;
+    }
+
+    .service-info-row > strong {
+        max-width: 100%;
+
+        text-align: left;
+    }
+
+    .service-inventory-item {
+        grid-template-columns: 1fr;
+    }
+
+    .service-inventory-actions {
+        justify-content: flex-start;
+    }
+
+}
