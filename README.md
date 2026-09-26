@@ -1,16 +1,111 @@
-# React + Vite
+# 🏥 Hospital Management System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive **Hospital Management System frontend** built using **React.js, Vite, Bootstrap, Axios, and React Router**.
 
-Currently, two official plugins are available:
+The application provides separate interfaces for **Admin, Doctor, Patient, and Employee** users and communicates with a Spring Boot REST API backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔐 Authentication
+- User login
+- User registration
+- Authentication handling
+- Protected routes
+- Role-based navigation
+- Automatic redirection based on user role
 
-## Expanding the Oxlint configuration
+### 👨‍💼 Admin Dashboard
+- Admin dashboard
+- User management
+- Doctor management
+- Patient management
+- Employee management
+- Department management
+- Hospital service management
+- Inventory management
+- Task management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 👨‍⚕️ Doctor Dashboard
+- Doctor dashboard
+- View appointments
+- View appointment details
+- View patient information
+- Patient history
+- Create diagnosis
+- Update diagnosis
+- Add prescription
+- Manage treatment-related information
+- Create and manage tasks
+
+### 🧑‍🤝‍🧑 Patient Dashboard
+- Patient dashboard
+- View profile
+- Book appointments
+- View appointments
+- View appointment details
+- View diagnosis
+- View prescription
+- View treatment information
+
+### 👷 Employee Dashboard
+- Employee dashboard
+- View assigned tasks
+- Update task status
+- Track task progress
+- Complete assigned tasks
+
+### 📅 Appointment Management
+- Appointment listing
+- Appointment details
+- Appointment type
+- Appointment date and time
+- Doctor-patient relationship
+- Diagnosis integration
+- Task integration
+
+### 🩺 Diagnosis
+- View diagnosis
+- Add diagnosis
+- Update diagnosis
+- Prescription information
+- Handles appointments where diagnosis has not yet been created
+
+### 🏢 Department & Services
+- View departments
+- Manage hospital services
+- Service information
+- Service fees
+- Service inventory
+
+### 📦 Inventory
+- View inventory
+- Add inventory
+- Update stock
+- Assign inventory to patients
+- Remove inventory from patients
+- Delete inventory
+
+### 📋 Task Management
+- Create tasks
+- Assign tasks
+- View tasks
+- Update task status
+- Track task progress
+
+
+
+# 🛠️ Tech Stack
+
+React.js -> Frontend library
+Vite -> Development & build tool 
+JavaScript -> Programming language 
+Bootstrap -> UI & responsive design
+Axios -> API communication
+React Router -> Client-side routing
+HTML5 -> Page structure
+CSS3 -> Styling
+Git & GitHub -> Version control
+
+
