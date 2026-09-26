@@ -26,7 +26,7 @@ import BookAppointment from "../pages/patient/BookAppointment";
 import UpdateAppointment from "../pages/patient/UpdateAppointment";
 import ViewAppointment from "../pages/patient/ViewAppointment";
 import AddTask from "../pages/tasks/AddTask";
-import EmployeeTasks from "../pages/tasks/Employeetasks";
+import EmployeeTasks from "../pages/tasks/EmployeeTasks";
 import AdminTasks from "../pages/admin/AdminTasks";
 
 import AdminDashboard from "../pages/dashboards/AdminDashboard";
